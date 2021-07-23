@@ -66,7 +66,7 @@ app.get('/delete-task',function(req,res){
 
 
 // server is listing the request and sending back response
-app.listen(port,function(err){
+app.listen(process.env.port || 3000,function(err){
     if(err){
         console.log('Error',err);
         console.log(`Error in running the server : ${err}`);
@@ -75,3 +75,4 @@ app.listen(port,function(err){
     console.log(`server is running on port:${port}`);
 
 });
+
