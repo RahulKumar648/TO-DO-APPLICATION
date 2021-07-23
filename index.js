@@ -1,10 +1,12 @@
 const express=require('express');
 const path=require('path');
+const mongoose=require('mongoose');
 const db=require("./config/mongoose");
 const Task = require('./models/task');
 
 const app=express();//to add all the functionality of express
 const port=7000;//server will run om port number 7000
+
 
 // use express router
 //app.use('/',require('./routes'));//app using this route
